@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration_style.css">
+   
+    <!-- defer is used to load the script after loading the page , It will increase the loading speed of the page-->
+</head>
+<body>
+        <!-- Container for whole form into the single container-->
+        <div class="container">
+            <form action=" " id="form"><!--POST method will be best for sending the password confidentially-->
+                <h1>Register</h1>
+                <!-- For username-->
+                <div class="input_group">
+                    <label for="Username" class="label">Username</label>
+                    <input type="text" id="Username" name="Username">
+                    <div class="error"></div>
+                </div>
+
+                <!-- For email id-->
+                <div class="input_group">
+                    <label for="Email" class="label">Email</label>
+                    <input type="text" id=" Email" name="Email">
+                    <div class="error"></div>
+                </div>
+
+                <!-- For password-->
+                <div class="input_group">
+                    <label for="Password" class="label">Password</label>
+                    <input type="password" id="Password" name="Password">
+                    <img src="..\src\close-eye.png" onclick = "pass()"
+                    class="close-eye" id="pwd">
+                    <div class="error"></div>
+                </div>
+
+                <!-- For ensuring the password whether it is same or not-->
+                <div class="input_group">
+                    <label for="Cpassword" class="label">Confirm Password</label>
+                    <input type="password" id="Cpassword" name="Cpassword">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+
+        </div>
+        <script src="registration_script.js"></script>
+</body>
+</html>

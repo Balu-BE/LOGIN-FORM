@@ -1,0 +1,32 @@
+html{
+    background: linear-gradient(125deg, orange, purple);
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.box{
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 20px;
+    color: #1e7fb0;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+ h1, h3 {
+    /* color: #1e7fb0; */
+    color: white;
+    font-weight: 700;
+    outline-color: black;
+}
+
+body, header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#qr-code{
+  text-align: center;
+}

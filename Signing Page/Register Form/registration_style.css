@@ -1,0 +1,108 @@
+body{
+    background: rgba(255,255,255,0.06);
+    background: linear-gradient(to right, #3f5efb, #fc466b);
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+#form{
+    width: 400px;
+    margin: 5vh auto 0 auto;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding: 30px;
+   
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    opacity: .7;
+}
+#form button{
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+    background: rgba(255,255,255,0.06);
+    padding: 10px ;
+    margin: 20px 0px;
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+    box-shadow: 3px 3px 5px rgba(31,38,135,.37);
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+.input_group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input_group input{
+    width: 70%;
+    margin: 5% auto;
+    padding-inline-end: 10px;
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    opacity: .7;
+}
+.label{
+    font-size: 16px;
+    color: white;
+    padding: auto;
+    opacity: 0.7;
+    margin-left: 10%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.input_group .error{
+    color: rgb(242, 18, 18);
+    font-size: 16px;
+    margin-top: 3px;
+    margin-left: 10%;
+}
+.input_group.success input{
+    border-color: #0cc477;
+}
+.input_group.error input{
+    border-color: rgb(206, 67, 67);
+}
+#password{
+    display: inline-block;
+    position: relative;
+}
+#password input{
+    padding: 10px 5px;
+    outline: none;
+    border: 0;
+}
+.close-eye{
+    position: absolute;
+    top: 410px;
+    right: 470px;
+    width: 24px;
+    cursor: pointer;
+}
+
+form::after{
+    content: "";
+    position: absolute;
+    top: 2%;
+    left: 29%;
+    bottom: 80%;
+    width: 90px;
+    height: 90px;
+    background: magenta;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+}
